@@ -15,7 +15,7 @@ writeLines(text=RunDriver, con=paste0("C:/Users/",Sys.info()["user"],"/Documents
 shell.exec(file=paste0("C:/Users/",Sys.info()["user"],"/Documents/RunSelenium.bat"))
 
 #Open page
-remDr <- remoteDriver(browserName = "chrome") #mozilla, chrome
+remDr=remoteDriver(browserName = "chrome") #mozilla, chrome
 remDr$open()
 
 #Go to poderopedia
